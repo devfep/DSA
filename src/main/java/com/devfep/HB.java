@@ -36,6 +36,7 @@ import java.util.*;
 public class HB {
     public static void main(String[] args) {
         System.out.println(uniqueNumbers(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
+        System.out.println(uniqueNumbersAlt(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
 
     }
 
@@ -50,6 +51,15 @@ public class HB {
         }
         return returnList;
     }
+
+    public static Set<Integer> uniqueNumbersAlt(int[] numArray){
+        Set<Integer> returnSet = new HashSet<>();
+        for (int num:numArray){
+            returnSet.add(num);
+        }
+        return returnSet;
+    }
+
 
 
 }
