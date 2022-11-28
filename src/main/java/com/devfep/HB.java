@@ -37,7 +37,7 @@ public class HB {
     public static void main(String[] args) {
         System.out.println(uniqueNumbers(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
         System.out.println(uniqueNumbersAlt(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
-
+        System.out.println(charCount("racecar"));
     }
 
     public static List<Integer> uniqueNumbers(int[] numArray){
@@ -60,6 +60,13 @@ public class HB {
         return returnSet;
     }
 
+    public static Map<Character, Integer> charCount(String word){
+        Map<Character, Integer> hashM = new HashMap<>();
 
+        for (int i = 0; i < word.length(); i++) {
+            hashM.put(word.charAt(i), hashM.getOrDefault(word.charAt(i), 0) + 1);
+        }
+        return hashM;
+    }
 
 }
