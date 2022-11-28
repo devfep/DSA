@@ -39,6 +39,7 @@ public class HB {
         System.out.println(uniqueNumbersAlt(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
         System.out.println(charCount("racecar"));
         System.out.println(Arrays.toString(seriesPrinter(new int[]{4,5,6})));
+        System.out.println(uniqueLetters("racecar"));
     }
 
     public static List<Integer> uniqueNumbers(int[] numArray){
@@ -80,6 +81,14 @@ public class HB {
         }
         Integer[] answer = returnList.toArray(new Integer[returnList.size()]);
         return answer;
+    }
+
+    public static Set<Character> uniqueLetters(String s){
+        Set<Character> unique = new HashSet<>();
+        for (int i = 0; i < s.length(); i++) {
+            unique.add(s.charAt(i));
+        }
+        return unique;
     }
 
 }
