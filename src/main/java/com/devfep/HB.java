@@ -38,6 +38,7 @@ public class HB {
         System.out.println(uniqueNumbers(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
         System.out.println(uniqueNumbersAlt(new int[]{1, 1, 1, 3, 4, 3, 5, 6, 4, 10}));
         System.out.println(charCount("racecar"));
+        System.out.println(Arrays.toString(seriesPrinter(new int[]{4,5,6})));
     }
 
     public static List<Integer> uniqueNumbers(int[] numArray){
@@ -67,6 +68,18 @@ public class HB {
             hashM.put(word.charAt(i), hashM.getOrDefault(word.charAt(i), 0) + 1);
         }
         return hashM;
+    }
+
+    public static Integer[] seriesPrinter(int[] numArray){
+        List<Integer> returnList = new ArrayList<>();
+
+        for (int i = 0; i < numArray.length; i++) {
+           for (int count = 0; count < numArray[i]; count++){
+               returnList.add(numArray[i]);
+           }
+        }
+        Integer[] answer = returnList.toArray(new Integer[returnList.size()]);
+        return answer;
     }
 
 }
