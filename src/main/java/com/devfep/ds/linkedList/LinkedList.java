@@ -9,12 +9,6 @@ public class LinkedList {
             this.value = value;
         }
     }
-
-
     private Node head;
     private Node tail;
-
-    
-
-
 }
