@@ -1,5 +1,4 @@
 package com.devfep;
-
 /*
 * Solve each problem using Java built-in syntax and primarily for-loops. Try to do as quickly as possible. If you’re not sure how to solve the problem, consult with a classmate on the pseudocode before you try to implement the solution. These exercises are intended to help you increase your speed of using Java syntax and also help you feel confident with key interview data structures like arrays, arraylists, hashmaps, hashsets, and 2-d arrays.
 
